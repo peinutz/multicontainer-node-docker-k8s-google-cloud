@@ -3,8 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: database-persistent-volume-claim
 spec:
+  storageClassName: hostpath
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 2Gi
+      storage: 1Gi
