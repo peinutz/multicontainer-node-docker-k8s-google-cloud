@@ -17,7 +17,7 @@ before_install:
   - docker build -t peinutz/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run peinutz/docker-react npm run test -- --coverage
+  - docker run peinutz/react-test npm run test -- --coverage
 
 deploy:
   provider: script
